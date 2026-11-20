@@ -23,7 +23,7 @@ const io = new IntersectionObserver(entries => {
     if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
   });
 }, { threshold: 0.12 });
-document.querySelectorAll('.section__head, .card, .gallery__item, .member, .quote, .post, .steps li, .form, .contact__info')
+document.querySelectorAll('.section__head, .card, .gallery__item, .fact, .rent__prices, .member, .quote, .post, .steps li, .form, .contact__info')
   .forEach(el => { el.classList.add('reveal'); io.observe(el); });
 
 // Formulario de contacto
@@ -53,7 +53,7 @@ form.addEventListener('submit', async e => {
   if (!FORM_ENDPOINT) {
     // Sin endpoint: abre el cliente de correo con el mensaje
     const body = `Nombre: ${data.get('nombre')}\nEmail: ${data.get('email')}\nTeléfono: ${data.get('telefono')}\nServicio: ${data.get('servicio')}\n\n${data.get('mensaje')}`;
-    location.href = `mailto:info@centroalire.com?subject=${encodeURIComponent('Consulta web: ' + data.get('servicio'))}&body=${encodeURIComponent(body)}`;
+    location.href = `mailto:alirepsicologiaybienestar@gmail.com?subject=${encodeURIComponent('Consulta web: ' + data.get('servicio'))}&body=${encodeURIComponent(body)}`;
     return;
   }
 
