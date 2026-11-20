@@ -53,7 +53,7 @@ form.addEventListener('submit', async e => {
   if (!FORM_ENDPOINT) {
     // Sin endpoint: abre el cliente de correo con el mensaje
     const body = `Nombre: ${data.get('nombre')}\nEmail: ${data.get('email')}\nTeléfono: ${data.get('telefono')}\nServicio: ${data.get('servicio')}\n\n${data.get('mensaje')}`;
-    location.href = `mailto:info@centroalire.es?subject=${encodeURIComponent('Consulta web: ' + data.get('servicio'))}&body=${encodeURIComponent(body)}`;
+    location.href = `mailto:info@centroalire.com?subject=${encodeURIComponent('Consulta web: ' + data.get('servicio'))}&body=${encodeURIComponent(body)}`;
     return;
   }
 
