@@ -23,7 +23,7 @@ const io = new IntersectionObserver(entries => {
     if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
   });
 }, { threshold: 0.12 });
-document.querySelectorAll('.section__head, .card, .member, .quote, .post, .steps li, .form, .contact__info')
+document.querySelectorAll('.section__head, .card, .gallery__item, .member, .quote, .post, .steps li, .form, .contact__info')
   .forEach(el => { el.classList.add('reveal'); io.observe(el); });
 
 // Formulario de contacto
@@ -70,3 +70,15 @@ form.addEventListener('submit', async e => {
     status.className = 'form__status error';
   }
 });
+
+// Galería: ver foto ampliada
+const lightbox = document.querySelector('.lightbox');
+const lbImg = lightbox.querySelector('img');
+document.querySelectorAll('.gallery__item').forEach(a => a.addEventListener('click', e => {
+  e.preventDefault();
+  lbImg.src = a.href;
+  lbImg.alt = a.querySelector('img').alt;
+  lightbox.hidden = false;
+}));
+lightbox.addEventListener('click', e => { if (e.target !== lbImg) lightbox.hidden = true; });
+addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.hidden = true; });

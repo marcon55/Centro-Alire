@@ -59,8 +59,8 @@ h3 { font-size: 1.2rem; }
 .hero__facts strong { display: block; font-family: var(--serif); font-size: 1.5rem; color: var(--green-dark); }
 .hero__visual { position: relative; height: 420px; }
 .blob { position: absolute; border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%; }
-.blob--1 { inset: 0 10% 10% 0; background: linear-gradient(135deg, #a9c6b5, var(--green)); animation: morph 12s ease-in-out infinite; }
-.blob--2 { width: 45%; height: 45%; right: 0; bottom: 0; background: #e8c9a9; animation: morph 9s ease-in-out infinite reverse; }
+.blob--2 { width: 45%; height: 45%; right: -4%; bottom: -4%; background: #e8c9a9; animation: morph 9s ease-in-out infinite reverse; }
+.hero__photo { position: absolute; inset: 0 8% 8% 0; width: 92%; height: 92%; object-fit: cover; border-radius: 28px; box-shadow: var(--shadow); }
 .hero__card { position: absolute; left: -1rem; bottom: 2rem; background: #fff; padding: 1.2rem 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow); max-width: 260px; font-family: var(--serif); font-size: 1.05rem; }
 @keyframes morph { 50% { border-radius: 58% 42% 37% 63% / 55% 38% 62% 45%; } }
 
@@ -81,6 +81,17 @@ h3 { font-size: 1.2rem; }
 
 .price-note { text-align: center; margin-top: 2.5rem; color: var(--muted); }
 .price-note strong { color: var(--green-dark); }
+
+/* Galería */
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 1rem; }
+.gallery__item { display: block; overflow: hidden; border-radius: var(--radius); }
+.gallery__item--big { grid-column: span 2; grid-row: span 2; }
+.gallery__item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.gallery__item:hover img { transform: scale(1.04); }
+.lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(20, 22, 21, .9); display: grid; place-items: center; padding: 2rem; }
+.lightbox[hidden] { display: none; }
+.lightbox img { max-width: 100%; max-height: 90vh; border-radius: 12px; }
+.lightbox__close { position: absolute; top: 1rem; right: 1.5rem; background: none; border: 0; color: #fff; font-size: 2.5rem; cursor: pointer; }
 
 /* Pasos */
 .steps { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.8rem; counter-reset: s; }
@@ -165,6 +176,8 @@ h3 { font-size: 1.2rem; }
   .hero__visual { height: 300px; }
   .grid--3 { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
+  .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
+  .gallery__item:last-child { grid-column: span 2; }
 }
 @media (max-width: 720px) {
   .nav-toggle { display: block; }
@@ -178,6 +191,7 @@ h3 { font-size: 1.2rem; }
   .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .grid--3, .steps { grid-template-columns: 1fr; }
+  .gallery { grid-auto-rows: 160px; gap: .6rem; }
   .section { padding: 4rem 0; }
   .hero { padding: 3rem 0 4rem; }
 }
