@@ -82,3 +82,13 @@ document.querySelectorAll('.gallery__item').forEach(a => a.addEventListener('cli
 }));
 lightbox.addEventListener('click', e => { if (e.target !== lbImg) lightbox.hidden = true; });
 addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.hidden = true; });
+
+// Mapa: se carga solo tras consentimiento
+document.querySelectorAll('.map__consent button').forEach(btn => btn.addEventListener('click', () => {
+  const box = btn.closest('.map__consent');
+  const iframe = document.createElement('iframe');
+  iframe.title = 'Mapa de Centro Alire';
+  iframe.src = box.dataset.src;
+  iframe.referrerPolicy = 'no-referrer-when-downgrade';
+  box.replaceWith(iframe);
+}));

@@ -196,3 +196,13 @@ h3 { font-size: 1.2rem; }
   .hero { padding: 3rem 0 4rem; }
 }
 .map__btn { margin-bottom: 1rem; }
+.map__consent { height: 100%; display: grid; place-content: center; justify-items: center; gap: 1rem; padding: 1.5rem; text-align: center; background: #fff; color: var(--muted); font-size: .92rem; }
+.form__legal { font-size: .78rem; color: var(--muted); line-height: 1.5; }
+
+/* Páginas legales */
+.legal { max-width: 760px; }
+.legal h1 { margin-bottom: .4rem; }
+.legal__updated { color: var(--muted); font-size: .9rem; margin-bottom: 2.5rem; }
+.legal h2 { font-size: 1.35rem; margin: 2.2rem 0 .8rem; }
+.legal p, .legal ul { margin-bottom: 1rem; }
+.legal ul { padding-left: 1.3rem; display: grid; gap: .35rem; }

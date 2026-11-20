@@ -313,7 +313,10 @@
           </ul>
           <a href="https://maps.app.goo.gl/Z1BPrTncamtzQ6eK8" class="btn btn--ghost btn--small map__btn" target="_blank" rel="noopener">📍 Cómo llegar</a>
           <div class="map">
-            <iframe title="Mapa de Centro Alire" src="https://www.google.com/maps?q=Carrer+d'Alfons+XII+32,+08006+Barcelona&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map__consent" data-src="https://www.google.com/maps?q=Carrer+d'Alfons+XII+32,+08006+Barcelona&output=embed">
+              <p>El mapa lo ofrece Google Maps, que puede instalar cookies. <a href="cookies.html">Más información</a>.</p>
+              <button type="button" class="btn btn--small">Mostrar mapa</button>
+            </div>
           </div>
         </div>
         <form class="form" id="contact-form" novalidate>
@@ -346,10 +349,11 @@
           </div>
           <label class="form__check">
             <input type="checkbox" name="privacidad" required>
-            <span>He leído y acepto la <a href="#">política de privacidad</a>.</span>
+            <span>He leído la <a href="privacidad.html" target="_blank">política de privacidad</a> y consiento el tratamiento de mis datos, incluidos los de salud que pueda indicar, para responder a mi consulta.</span>
           </label>
           <button type="submit" class="btn btn--full">Enviar mensaje</button>
           <p class="form__status" role="status" aria-live="polite"></p>
+          <p class="form__legal">Responsable: Pol Osés (Centro Alire). Finalidad: responder a tu consulta. Puedes acceder, rectificar y suprimir tus datos y ejercer otros derechos, como se explica en la <a href="privacidad.html" target="_blank">política de privacidad</a>.</p>
         </form>
       </div>
     </section>
@@ -360,9 +364,9 @@
     <div class="container footer__inner">
       <p>© <span id="year"></span> Centro Alire · Psicología y Terapia</p>
       <nav>
-        <a href="#">Aviso legal</a>
-        <a href="#">Privacidad</a>
-        <a href="#">Cookies</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
       </nav>
     </div>
   </footer>
