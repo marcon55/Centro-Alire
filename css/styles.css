@@ -1,6 +1,6 @@
 :root {
-  --green: #5b8a72;
-  --green-dark: #3f6654;
+  --green: #5c7a64;
+  --green-dark: #3e5746;
   --sand: #f6f1ea;
   --cream: #fffdf9;
   --ink: #2b2f2c;
@@ -43,9 +43,10 @@ h3 { font-size: 1.2rem; }
 .header.scrolled { border-color: var(--line); }
 .header__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .logo { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--ink); }
-.logo__mark { width: 36px; height: 36px; color: var(--green); }
-.logo__text { font-family: var(--serif); font-size: 1.45rem; line-height: 1.05; display: flex; flex-direction: column; }
-.logo__text small { font-family: var(--sans); font-size: .68rem; letter-spacing: .04em; color: var(--muted); }
+.logo__mark { width: 52px; height: 52px; }
+.logo__text strong { font-weight: 400; }
+.logo__text { font-family: var(--serif); font-size: 1.5rem; line-height: 1.05; display: flex; flex-direction: column; text-transform: uppercase; letter-spacing: .18em; }
+.logo__text small { font-family: var(--sans); font-size: .6rem; letter-spacing: .22em; color: var(--green-dark); margin-top: .2rem; }
 .nav { display: flex; align-items: center; gap: 1.8rem; }
 .nav a:not(.btn) { text-decoration: none; color: var(--ink); font-weight: 500; }
 .nav a:not(.btn):hover { color: var(--green); }
@@ -144,7 +145,7 @@ h3 { font-size: 1.2rem; }
 .form input, .form select, .form textarea {
   font: inherit; padding: .8rem 1rem; border: 1px solid var(--line); border-radius: 12px; background: var(--cream); transition: border-color .2s, box-shadow .2s;
 }
-.form input:focus, .form select:focus, .form textarea:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(91, 138, 114, .2); }
+.form input:focus, .form select:focus, .form textarea:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(92, 122, 100, .2); }
 .form .invalid { border-color: #c0573f; }
 .form__check { display: flex; gap: .6rem; align-items: flex-start; font-size: .9rem !important; font-weight: 400 !important; }
 .form__check input { margin-top: .3rem; }
