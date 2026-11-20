@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" role="img" aria-label="Ilustración: una figura adulta y una pequeña frente a frente, con un corazón entre ambas">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3edf2"/><stop offset="1" stop-color="#a9c2d1"/></linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#bg)"/>
+  <circle cx="200" cy="250" r="150" fill="#fffdf9" opacity=".35"/>
+  <circle cx="200" cy="250" r="100" fill="#fffdf9" opacity=".35"/>
+  <circle cx="70" cy="50" r="5" fill="#fffdf9"/><circle cx="330" cy="70" r="4" fill="#fffdf9"/><circle cx="300" cy="35" r="3" fill="#fffdf9"/>
+  <circle cx="135" cy="88" r="24" fill="#fffdf9"/>
+  <path d="M95 250 v-80 a40 40 0 0 1 80 0 v80z" fill="#fffdf9"/>
+  <circle cx="268" cy="140" r="17" fill="#5b8a72"/>
+  <path d="M240 250 v-45 a28 28 0 0 1 56 0 v45z" fill="#5b8a72"/>
+  <path d="M203 112 c-7 -11 -23 -5 -20 7 c3 9 20 20 20 20 s17 -11 20 -20 c3 -12 -13 -18 -20 -7z" fill="#d0896a"/>
+  <path d="M178 150 q25 -16 44 -4" fill="none" stroke="#fffdf9" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 8"/>
+</svg>

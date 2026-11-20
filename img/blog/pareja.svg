@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" role="img" aria-label="Ilustración: dos bocadillos de diálogo que se encuentran, con un corazón entre ellos">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6ece1"/><stop offset="1" stop-color="#e5c7a8"/></linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#bg)"/>
+  <circle cx="70" cy="200" r="70" fill="#e8c9a9" opacity=".6"/>
+  <circle cx="345" cy="45" r="45" fill="#fffdf9" opacity=".5"/>
+  <path d="M62 62 h130 a22 22 0 0 1 22 22 v48 a22 22 0 0 1 -22 22 h-80 l-26 24 v-24 h-24 a22 22 0 0 1 -22 -22 v-48 a22 22 0 0 1 22 -22z" fill="#fffdf9"/>
+  <g stroke="#c9ab8c" stroke-width="7" stroke-linecap="round"><path d="M70 92 h100"/><path d="M70 112 h70"/><path d="M70 132 h88"/></g>
+  <path d="M208 102 h130 a22 22 0 0 1 22 22 v48 a22 22 0 0 1 -22 22 h-24 v24 l-26 -24 h-80 a22 22 0 0 1 -22 -22 v-48 a22 22 0 0 1 22 -22z" fill="#5b8a72"/>
+  <g stroke="#a9c6b5" stroke-width="7" stroke-linecap="round"><path d="M230 132 h96"/><path d="M230 152 h60"/><path d="M230 172 h80"/></g>
+  <path d="M200 92 c-8 -12 -26 -6 -22 8 c3 10 22 22 22 22 s19 -12 22 -22 c4 -14 -14 -20 -22 -8z" fill="#d0896a"/>
+</svg>
