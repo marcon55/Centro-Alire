@@ -101,6 +101,8 @@ h3 { font-size: 1.2rem; }
 .member__more { margin-top: .8rem; text-align: left; font-size: .88rem; color: var(--muted); }
 .member__more summary { cursor: pointer; text-align: center; color: var(--green-dark); font-weight: 600; }
 .member__more ul { margin: .6rem 0 0 1.1rem; display: grid; gap: .3rem; }
+.member__more p { margin-top: .6rem; }
+.price-note small { display: inline-block; margin-top: .4rem; }
 
 /* Testimonios */
 .quote { background: #fff; padding: 2rem; border-radius: var(--radius); position: relative; }
