@@ -91,7 +91,7 @@ h3 { font-size: 1.2rem; }
 
 /* Equipo */
 .member { text-align: center; }
-.member__photo {
+.member__photo { object-fit: cover;
   width: 160px; height: 160px; margin: 0 auto 1.2rem; border-radius: 50%;
   background: linear-gradient(135deg, hsl(var(--hue) 35% 80%), hsl(var(--hue) 30% 60%));
   display: grid; place-items: center; font-family: var(--serif); font-size: 2.4rem; color: #fff;
